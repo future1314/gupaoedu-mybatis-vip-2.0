@@ -27,6 +27,15 @@ public class BootStrap {
         TestMapper testMapper = sqlSession.getMapper(TestMapper.class);
         long start = System.currentTimeMillis();
         Test test = testMapper.selectByPrimaryKey(1);
+        System.out.println(test);
+        System.out.println("cost:"+ (System.currentTimeMillis() -start));
+        start = System.currentTimeMillis();
+        test = testMapper.selectByPrimaryKey(1);
+        System.out.println(test);
+        System.out.println("cost:"+ (System.currentTimeMillis() -start));
+        start = System.currentTimeMillis();
+        test = testMapper.selectByPrimaryKey(2);
+        System.out.println(test);
         System.out.println("cost:"+ (System.currentTimeMillis() -start));
     }
 }

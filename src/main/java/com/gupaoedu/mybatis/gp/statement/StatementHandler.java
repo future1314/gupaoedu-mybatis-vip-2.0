@@ -45,7 +45,7 @@ public class StatementHandler {
         String driver = "com.mysql.cj.jdbc.Driver";
         String url = "jdbc:mysql://localhost:3306/gp?useUnicode=true&characterEncoding=utf-8&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
         String username = "root";
-        String password = "123456";
+        String password = "ml123456ok";
         Connection conn = null;
         try {
             Class.forName(driver); //classLoader,加载对应驱动
